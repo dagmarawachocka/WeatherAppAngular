@@ -1,0 +1,53 @@
+.popup-notfound {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 10px;
+  right: 10px;
+  width: 200px;
+  height: 32px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  animation: entry 2s ease-out 0s 2 alternate both;
+}
+
+.popup-notfound-message {
+  color: #333;
+  border-radius: 10px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.warm-popup {
+  background: #ffe6e6;
+  border-left: 13px solid #660000;
+  box-shadow: 3px 3px 10px #cc99ff;
+}
+
+.cold-popup {
+  background: #e0e0eb;
+  border-left: 13px solid #5c5c8a;
+  box-shadow: 3px 3px 10px #ffbb99;
+}
+
+@keyframes entry {
+  0% {
+    right: -250px;
+  }
+  20% {
+    right: 35px;
+  }
+  25% {
+    right: 10px;
+  }
+  100% {
+    right: 10px;
+  }
+}
