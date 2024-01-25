@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ---
 
-## Important Informaction
+## Important Information
 
 Register on [OpenWeatherMap](https://openweathermap.org/) and provide your api key in the *weather.service.ts* file. Without the api key, the application will not work. 
 
