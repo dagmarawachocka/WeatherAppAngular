@@ -2,9 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
 
+---
+
 ## Important Informaction
 
-==Register on [OpenWeatherMap](https://openweathermap.org/) and provide your api key in the <u>weather.service.ts</u> file.== Without the api key, the application will not work. 
+Register on [OpenWeatherMap](https://openweathermap.org/) and provide your api key in the *weather.service.ts* file. Without the api key, the application will not work. 
+
+---
 
 ## Development server
 
