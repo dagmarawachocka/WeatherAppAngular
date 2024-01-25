@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {map, Observable} from "rxjs";
+import {WeatherData} from "../weather-data";
 
 @Injectable({
   providedIn: 'root',
@@ -12,11 +13,11 @@ export class WeatherService {
   }
 
   getWeatherData(lat: number, lon: number): Observable<any> {
-    return this.http.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${this.apiKey}`)
+    return this.http.get<WeatherData>(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${this.apiKey}`)
   }
 
   getLocationData(city: string): Observable<any> {
-    return this.http.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.apiKey}`)
+    return this.http.get<WeatherData>(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.apiKey}`)
   }
 
   getCountryName(countryCode: string) {
@@ -24,4 +25,8 @@ export class WeatherService {
   }
 
 }
+
+
+
+
 
