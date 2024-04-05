@@ -1,3 +1,31 @@
+.api-button-container {
+  position: absolute;
+}
+
+.api-button {
+  margin: 20px;
+  padding: 7px 0;
+  width: 150px;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: Futura, sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 3px #000;
+  border-radius: 10px;
+}
+
+.warm-button {
+  background-color: #ffb3b3;
+  border: 1px solid #b30000;
+  box-shadow: 1px 1px 2px #b30000;
+}
+
+.cold-button {
+  background-color: #b3bfff;
+  border: 1px solid #5c5c8a;
+  box-shadow: 1px 1px 2px #5c5c8a;
+}
+
 .weather-block-container {
   display: flex;
   justify-content: center;

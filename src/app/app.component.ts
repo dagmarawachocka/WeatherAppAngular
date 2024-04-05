@@ -15,6 +15,5 @@ import {PopupComponent} from "./components/popup/popup.component";
 })
 export class AppComponent {
   title = 'weatherApp';
-
 }
 

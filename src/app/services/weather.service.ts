@@ -12,6 +12,10 @@ export class WeatherService {
   constructor(private http: HttpClient) {
   }
 
+  addApiKey(){
+    return this.apiKey = prompt("Register on https://openweathermap.org/ and provide api key here:")!.toString();
+  }
+
   getWeatherData(lat: number, lon: number): Observable<any> {
     return this.http.get<WeatherData>(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${this.apiKey}`)
   }

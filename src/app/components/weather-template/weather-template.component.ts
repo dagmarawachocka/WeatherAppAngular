@@ -112,4 +112,23 @@ export class WeatherTemplateComponent implements OnInit {
       };
     }
   }
+
+  addAPI() {
+    this.weatherService.addApiKey();
+    this.getUserLocation();
+  }
+
+  calculateButtonStyle() {
+    if (this.temperatureCelsius > 10) {
+      return {
+        'warm-button': true,
+        'cold-button': false
+      };
+    } else {
+      return {
+        'warm-button': false,
+        'cold-button': true
+      };
+    }
+  }
 }

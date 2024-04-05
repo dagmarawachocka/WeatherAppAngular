@@ -1,4 +1,7 @@
 <app-popup *ngIf="popupShow" [popupShow]="popupShow" [temperatureCelsius]="temperatureCelsius"></app-popup>
+<div class="api-button-container" [ngClass]="calculateBackground()">
+  <button class="api-button" (click)="addAPI()" [ngClass]="calculateButtonStyle()">Add API</button>
+</div>
 <div class="weather-block-container" [ngClass]="calculateBackground()">
   <div class="weather-block">
       <div class="search-field">
